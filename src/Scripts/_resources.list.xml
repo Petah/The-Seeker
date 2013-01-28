@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="player" type="GROUP"/>
+  <resource name="enemy" type="GROUP"/>
+  <resource name="scr_enter_room" type="RESOURCE"/>
+  <resource name="scr_enter_door" type="RESOURCE"/>
+  <resource name="scr_init_game" type="RESOURCE"/>
+  <resource name="scr_rand_init" type="RESOURCE"/>
+  <resource name="scr_hud_draw" type="RESOURCE"/>
+  <resource name="scr_init_room" type="RESOURCE"/>
+  <resource name="scr_speed_up" type="RESOURCE"/>
+  <resource name="scr_slow_down" type="RESOURCE"/>
+  <resource name="lights" type="GROUP"/>
+  <resource name="scr_fix_depth" type="RESOURCE"/>
+  <resource name="scr_bridge" type="RESOURCE"/>
+  <resource name="scr_unblock" type="RESOURCE"/>
+  <resource name="scr_hurt_player" type="RESOURCE"/>
+</resources>

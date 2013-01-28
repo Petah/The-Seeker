@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">
+
+switch (floor(random(8))) {
+    case 0: {
+        spawn = obj_enemy_knight;
+        break;
+    }
+    case 1: {
+        spawn = obj_enemy_eye;
+        break;
+    }/*
+    case 2: {
+        spawn = obj_enemy_frog;
+        break;
+    }*/
+    case 3: {
+        spawn = obj_enemy_brain;
+        break;
+    }
+    default: {
+        spawn = -1;
+        break;
+    }
+}
+
+if (spawn == -1) {
+    instance_destroy();
+} else {
+    instance_change(spawn, true);
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

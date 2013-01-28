@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYRELEASE" id="69">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (image_index == 0) {
+    if (point_distance(x, y, obj_player.x, obj_player.y) &lt; 60) {
+        if (item == -1 &amp;&amp; random(100) &lt; mimic_chance) {
+            instance_change(obj_mimic, true);
+        } else {
+            image_index = 1;
+            global.chest_sound += 1;
+            if (global.chest_sound &gt; 3) {
+                global.chest_sound = 0;
+            }
+            switch (global.chest_sound) {
+                case 0: {
+                    sound_play(snd_chest_1);
+                    break;
+                }
+                case 1: {
+                    sound_play(snd_chest_2);
+                    break;
+                }
+                case 2: {
+                    sound_play(snd_chest_3);
+                    break;
+                }
+                case 3: {
+                    sound_play(snd_chest_4);
+                    break;
+                }
+            }
+            if (item == -1) {
+                if (!global.item_hp) {
+                    global.item_hp = true;
+                    item = obj_item_hp_up;
+                } else if (!global.item_fire_1) {
+                    global.item_fire_1 = true;
+                    item = obj_item_fire_rate;
+                } else if (!global.item_speed) {
+                    global.item_speed = true;
+                    item = obj_item_speed_up;
+                } else if (!global.item_fire_2) {
+                    global.item_fire_2 = true;
+                    item = obj_item_fire_rate_2;
+                } else {
+                    instance_change(obj_mimic, true);
+                    item = -1;
+                }
+            }
+            
+            if (item &gt;= 0) {
+                switch (global.pickup_sound) {
+                    case 0: {
+                        sound_play(snd_pickup_1);
+                        break;
+                    }
+                    case 1: {
+                        sound_play(snd_pickup_2);
+                        break;
+                    }
+                }
+                global.pickup_sound += 1;
+                if (global.pickup_sound &gt; 2) {
+                    global.pickup_sound = 0;
+                }
+                
+                switch (item) {
+                    case obj_item_key: {
+                        obj_player.has_key = true;
+                        ds_list_add(obj_player.items, spr_item_key);
+                        break;
+                    }
+                    case obj_item_speed_up: {
+                        with (obj_player) {
+                            speed_friction = 0.2;
+                            speed_max = 9;
+                            speed_acceleration = 1.1
+                        }
+                        ds_list_add(obj_player.equipment, spr_item_speed_up_ani);
+                        ds_list_add(obj_player.items, spr_item_speed_up);
+                        break;
+                    }
+                    case obj_item_hp_up: {
+                        obj_player.base_hp += 20;
+                        obj_player.hp += 20;
+                        ds_list_add(obj_player.equipment, spr_hp_up_2);
+                        ds_list_add(obj_player.items, spr_hp_up_hud_2);
+                        break;
+                    }
+                    case obj_item_fire_rate: {
+                        obj_player.fire_rate -= 10;
+                        ds_list_add(obj_player.equipment, spr_3d_glasses);
+                        ds_list_add(obj_player.items, spr_3d_glasses_hud);
+                        break;
+                    }
+                    case obj_item_fire_rate_2: {
+                        obj_player.fire_rate -= 10;
+                        ds_list_add(obj_player.equipment, spr_pirate_hat);
+                        ds_list_add(obj_player.items, spr_pirate_hat_hud);
+                        break;
+                    }
+                }
+            }
+            
+            //obj_player.sprite_index = spr_player_got_item;
+        }
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

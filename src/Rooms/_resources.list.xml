@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rm_menu" type="RESOURCE"/>
+  <resource name="rm_level_intro" type="RESOURCE"/>
+  <resource name="rm_outdoor_2" type="RESOURCE"/>
+  <resource name="rm_level_castle" type="RESOURCE"/>
+  <resource name="rm_level_1" type="RESOURCE"/>
+  <resource name="rm_level_2" type="RESOURCE"/>
+  <resource name="rm_level_3" type="RESOURCE"/>
+  <resource name="rm_level_4" type="RESOURCE"/>
+  <resource name="rm_level_5" type="RESOURCE"/>
+  <resource name="rm_level_6" type="RESOURCE"/>
+  <resource name="rm_level_7" type="RESOURCE"/>
+  <resource name="rm_level_end" type="RESOURCE"/>
+  <resource name="rm_dead" type="RESOURCE"/>
+  <resource name="rm_template" type="RESOURCE"/>
+  <resource name="room31" type="RESOURCE"/>
+  <resource name="rm_island_example" type="RESOURCE"/>
+</resources>

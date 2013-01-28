@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">distance = point_distance(x, y, obj_player.x, obj_player.y);
+if (distance &gt; 400 || distance &lt; 100) {
+    current_speed -= deceleration;
+    if (current_speed &lt; 0) {
+        current_speed = 0;
+        image_speed = 0;
+        image_index = 1;
+    }
+} else {
+    image_speed = 0.1;
+    current_speed += acceleration;
+    if (current_speed &gt; max_speed) {
+        current_speed = max_speed;
+    }
+}
+mp_potential_step(obj_player.x, obj_player.y, current_speed, false);
+
+script_execute(scr_fix_depth);
+
+if (x - xprevious &lt; 0) {
+    image_xscale = 1;
+} else if (x - xprevious &gt; 0) {
+    image_xscale = -1;
+}
+script_execute(scr_unblock);
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

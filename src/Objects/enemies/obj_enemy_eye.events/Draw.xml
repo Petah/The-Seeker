@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+
+if (iCharge &gt; 0) {
+    draw_set_blend_mode(bm_add);
+    repeat(8) draw_circle_color(x-8+random(16),y-8+random(16),iCharge/10,$ffffff,$804000,floor(random(2)));
+    with(objTeslaParticle) {
+        gfKX_Tesla_Width= 4;
+        scpKX_Tesla_Draw(other.x,other.y,x,y,$ffffff,$ff8000,1,0.25);
+        draw_circle_color(x,y,6,$ffffff,$201000,false);
+        draw_circle_color(x,y,4,$ffffff,$804000,true);
+        draw_circle_color(x,y,8,$ffffff,$402000,true);
+        instance_destroy();
+    }
+    if (iCharge &gt;= 60) {
+        gfKX_Tesla_Width = 1;
+        repeat(4) scpKX_Tesla_Draw(x,y,x-32+random(64),y-32+random(64),$ff8000,$ff8000,0.25,0.25);
+    } 
+    draw_set_blend_mode(bm_normal);
+}
+//draw_text_color(x, y, string(iCharge), c_red, c_red, c_red, c_red, 1);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

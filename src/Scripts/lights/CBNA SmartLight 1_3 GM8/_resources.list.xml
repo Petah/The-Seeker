@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="SL_ToD_empty" type="RESOURCE"/>
+  <resource name="SL_engine_ini" type="RESOURCE"/>
+  <resource name="SL_engine_render" type="RESOURCE"/>
+  <resource name="SL_engine_draw" type="RESOURCE"/>
+  <resource name="SL_engine_free" type="RESOURCE"/>
+  <resource name="SL_light_ini" type="RESOURCE"/>
+  <resource name="SL_light_free" type="RESOURCE"/>
+  <resource name="SL_light_cast_obj" type="RESOURCE"/>
+  <resource name="SL_global_cast_obj" type="RESOURCE"/>
+  <resource name="SL_cast_sprite" type="RESOURCE"/>
+  <resource name="SL_draw_sprite_light" type="RESOURCE"/>
+  <resource name="SL_draw_sprite_shadow" type="RESOURCE"/>
+  <resource name="SL_sprite_set_ambient" type="RESOURCE"/>
+  <resource name="SL_set_time" type="RESOURCE"/>
+</resources>

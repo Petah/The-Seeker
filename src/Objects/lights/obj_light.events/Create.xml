@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// Initialisation de l'objet light
+
+sl_light_texture = spr_light_2; // Texture de la lumi�re
+sl_light_xscale = 2; // Facteurs d'�tirement x et y de la lumi�re
+sl_light_yscale = 2;
+sl_light_shadowsharpness = 0.2; // Facteur d'att�nuation des ombres
+
+// D�termine les objets devant 'occluder' la lumi�re
+SL_light_cast_obj(obj_shadow, -1);
+
+SL_light_ini(); // Initialisation de l'objet light
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

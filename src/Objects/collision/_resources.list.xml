@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_collision" type="RESOURCE"/>
+  <resource name="obj_shadow" type="RESOURCE"/>
+  <resource name="obj_collision_block_48" type="RESOURCE"/>
+  <resource name="obj_shadow_block_48" type="RESOURCE"/>
+  <resource name="obj_collision_hstrip" type="RESOURCE"/>
+  <resource name="obj_collision_hstrip_48" type="RESOURCE"/>
+  <resource name="obj_collision_vstrip_48" type="RESOURCE"/>
+  <resource name="obj_collision_vstrip" type="RESOURCE"/>
+  <resource name="obj_collision_bottom_right" type="RESOURCE"/>
+  <resource name="obj_collision_top_left" type="RESOURCE"/>
+  <resource name="obj_collision_top_right" type="RESOURCE"/>
+  <resource name="obj_collision_bottom_left" type="RESOURCE"/>
+  <resource name="obj_collision_circle" type="RESOURCE"/>
+</resources>

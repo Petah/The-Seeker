@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_pipe" type="RESOURCE"/>
+  <resource name="obj_item_sword" type="RESOURCE"/>
+  <resource name="obj_item_key" type="RESOURCE"/>
+  <resource name="obj_item_speed_up" type="RESOURCE"/>
+  <resource name="obj_item_hp_up" type="RESOURCE"/>
+  <resource name="obj_item_crystal" type="RESOURCE"/>
+  <resource name="obj_item_fire_rate" type="RESOURCE"/>
+  <resource name="obj_item_fire_rate_2" type="RESOURCE"/>
+  <resource name="obj_chest" type="RESOURCE"/>
+</resources>

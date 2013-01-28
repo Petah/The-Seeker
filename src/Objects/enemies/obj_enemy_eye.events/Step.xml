@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">script_execute(scr_fix_depth);
+
+distance = point_distance(x, y, obj_player.x, obj_player.y);
+slowing = true;
+if (distance &lt; 600) {
+    // Can see player
+    collision = collision_line(x, y, obj_player.x, obj_player.y, obj_collision, true, true);
+    if (collision &lt; 0) {
+        if (distance &gt; 200) {
+            slowing = false;
+            script_execute(scr_speed_up);
+            if (asleep &amp;&amp; !awaking &amp;&amp; !sleeping) {
+                asleep = false;
+                awaking = true;
+                sprite_index = spr_eye_opening;
+                image_index = 0;
+                alarm[1] = 30;
+            }
+        } else {
+            slowing = false;
+        }
+    }
+}
+if (slowing) {
+    iCharge = 0;    
+    if (awake &amp;&amp; !sleeping &amp;&amp; !asleep) {
+        awake = false;
+        sleeping = true;
+        sprite_index = spr_eye_closing;
+        image_index = 0;
+        alarm[2] = 30;
+    }
+    script_execute(scr_slow_down);
+}
+if (current_speed &gt; 0) {
+    mp_potential_step(obj_player.x, obj_player.y, current_speed, false);
+}
+
+
+if (awake &amp;&amp; loaded &amp;&amp; distance &lt; 330) {
+    if (iCharge &lt; 100) {
+        iCharge += 1;
+    }
+    obj_player.hp -= min(iCharge / 300, 0.2);
+
+    if (!sound_isplaying(snd_lightning)) {
+        sound_play(snd_lightning);
+    }   
+
+    instance_create(obj_player.x, obj_player.y, objTeslaParticle);
+} else {
+    if (iCharge &gt; 0.2) {
+        iCharge -= 0.2;
+    }
+    sound_stop(snd_lightning);
+} 
+
+if (x - xprevious &lt; 0) {
+    image_xscale = 1;
+} else if (x - xprevious &gt; 0) {
+    image_xscale = -1;
+}
+script_execute(scr_unblock);
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

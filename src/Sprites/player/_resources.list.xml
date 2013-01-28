@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_player" type="RESOURCE"/>
+  <resource name="sprite61" type="RESOURCE"/>
+  <resource name="spr_swipe_2" type="RESOURCE"/>
+  <resource name="spr_swipe" type="RESOURCE"/>
+</resources>

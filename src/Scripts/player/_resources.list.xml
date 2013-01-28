@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_player_init" type="RESOURCE"/>
+  <resource name="scr_player_step" type="RESOURCE"/>
+  <resource name="scr_player_draw" type="RESOURCE"/>
+  <resource name="scr_player_destory" type="RESOURCE"/>
+  <resource name="scr_player_step_sound" type="RESOURCE"/>
+  <resource name="scr_player_shoot" type="RESOURCE"/>
+</resources>

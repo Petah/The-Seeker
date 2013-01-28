@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg_island_bottom" type="RESOURCE"/>
+  <resource name="bg_island_left_bottom" type="RESOURCE"/>
+  <resource name="bg_island_right_bottom" type="RESOURCE"/>
+  <resource name="bg_island_top_left" type="RESOURCE"/>
+  <resource name="bg_island_top_right" type="RESOURCE"/>
+  <resource name="bg_island_top" type="RESOURCE"/>
+  <resource name="bg_island_left" type="RESOURCE"/>
+  <resource name="bg_island_right" type="RESOURCE"/>
+  <resource name="bg_island_floor" type="RESOURCE"/>
+</resources>

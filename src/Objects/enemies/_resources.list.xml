@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_enemy_eye" type="RESOURCE"/>
+  <resource name="obj_mimic" type="RESOURCE"/>
+  <resource name="obj_enemy_knight" type="RESOURCE"/>
+  <resource name="obj_enemy" type="RESOURCE"/>
+  <resource name="obj_enemy_eye_die" type="RESOURCE"/>
+  <resource name="obj_enemy_frog" type="RESOURCE"/>
+  <resource name="obj_enemy_brain" type="RESOURCE"/>
+</resources>

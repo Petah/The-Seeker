@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="42">
+  <sprite>spr_collision_block_48</sprite>
+  <solid>true</solid>
+  <visible>true</visible>
+  <depth>90000</depth>
+  <persistent>false</persistent>
+  <parent>obj_collision</parent>
+  <mask/>
+</object>

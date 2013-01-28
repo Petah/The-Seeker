@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// Initialisation de l'objet engine
+
+sl_tod_active = 0; // D�sactive le cycle jour nuit
+global.sl_ambient_light = 0.1; // Lumi�re ambiante
+
+SL_ToD_empty(); // Initialisation du ToD
+SL_set_time(0); // Initialisation de l'heure
+SL_engine_ini(); // Initialisation du syst�me</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

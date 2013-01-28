@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_mimic_side" type="RESOURCE"/>
+  <resource name="spr_mimic_up" type="RESOURCE"/>
+  <resource name="spr_boss" type="RESOURCE"/>
+  <resource name="spr_eye_death" type="RESOURCE"/>
+  <resource name="spr_eye_open" type="RESOURCE"/>
+  <resource name="spr_knight" type="RESOURCE"/>
+  <resource name="spr_eye_still" type="RESOURCE"/>
+  <resource name="spr_frog" type="RESOURCE"/>
+  <resource name="spr_eye_opening" type="RESOURCE"/>
+  <resource name="spr_eye_closing" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="601" library="1">
+      <!--action name: Execute_Script-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_execute_script</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="SCRIPT">scr_enemy_runner_step</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (abs(x - xprevious) != abs(y - yprevious)) {
+    if (abs(x - xprevious) &gt; abs(y - yprevious)) {
+        sprite_index = spr_mimic_side;
+    } else {
+        sprite_index = spr_mimic_up;
+    }
+    if (x - xprevious &lt; 0) {
+        image_xscale = -1;
+    } else if (x - xprevious &gt; 0) {
+        image_xscale = 1;
+    }
+}
+
+if (!biting &amp;&amp; distance &lt; 70) {
+    biting = true;
+    alarm[0] = 30;
+    sound_play(snd_mimic_bite);
+    obj_player.hp -= 1;
+}
+script_execute(scr_unblock);
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

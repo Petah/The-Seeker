@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_hud_item_key" type="RESOURCE"/>
+  <resource name="spr_hud_health" type="RESOURCE"/>
+  <resource name="spr_hud_health_overlay" type="RESOURCE"/>
+  <resource name="spr_hud_item_blank" type="RESOURCE"/>
+  <resource name="spr_hud_item_empty" type="RESOURCE"/>
+  <resource name="spr_hud_gun" type="RESOURCE"/>
+</resources>

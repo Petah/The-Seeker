@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="island" type="GROUP"/>
+  <resource name="background2" type="RESOURCE"/>
+  <resource name="bg_dead" type="RESOURCE"/>
+  <resource name="bg_logo" type="RESOURCE"/>
+  <resource name="bg_grass" type="RESOURCE"/>
+  <resource name="bg_hedge_tileset_1" type="RESOURCE"/>
+  <resource name="bg_wall_tileset_2" type="RESOURCE"/>
+  <resource name="bg_wall_tileset_1" type="RESOURCE"/>
+  <resource name="background20" type="RESOURCE"/>
+  <resource name="bg_space_small" type="RESOURCE"/>
+  <resource name="bg_space" type="RESOURCE"/>
+  <resource name="bg_hedge_island" type="RESOURCE"/>
+  <resource name="bg_objects" type="RESOURCE"/>
+  <resource name="bg_castle" type="RESOURCE"/>
+</resources>
